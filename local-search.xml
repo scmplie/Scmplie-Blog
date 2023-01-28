@@ -4,9 +4,30 @@
   
   
   <entry>
+    <title>我对于晶体管的理解</title>
+    <link href="/2023/01/26/study/transistor/"/>
+    <url>/2023/01/26/study/transistor/</url>
+    
+    <content type="html"><![CDATA[<p><font color=sblue><strong>晶体管</strong></font>泛指一切以半导体材料为基础的单一元件，包括各种半导体材料制成的<font color=skyblue><em>二极管</em></font>、<font color=skyblue><em>三极管</em></font>、场效应管、晶闸管等。晶体管具有检波、整流、放大、开关、稳压、信号调制等多种功能，晶体管可用于各种各样的数字和模拟功能。<p align="right">——百度百科</p></p><h1 id="二极管的两种理解方式"><a href="#二极管的两种理解方式" class="headerlink" title="二极管的两种理解方式"></a>二极管的两种理解方式</h1><blockquote><p>我们知道二极管具有<strong>单向导电性能</strong>，即给二极管阳极加上正向电压时，二极管导通。当给阳极和阴极加上反向电压时，二极管截止。怎么去理解呢</p></blockquote><h2 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h2>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>物理</tag>
+      
+      <tag>模电</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>他妈的微积分怎么那么难</title>
-    <link href="/2023/01/13/life/Calculus/"/>
-    <url>/2023/01/13/life/Calculus/</url>
+    <link href="/2023/01/13/study/calculus/"/>
+    <url>/2023/01/13/study/calculus/</url>
     
     <content type="html"><![CDATA[<h1 id="我对于微积分的浅薄理解"><a href="#我对于微积分的浅薄理解" class="headerlink" title="我对于微积分的浅薄理解"></a>我对于微积分的浅薄理解</h1><blockquote><p>md，经过了几天，无数视频的观看，终于稍微有点理解微积分是干嘛的了。</p></blockquote><p><img src="https://s1.ax1x.com/2023/01/15/pSQaR6H.png"></p><p>首先，你对一个函数进行求导（如上图），得出来的导函数大概下面是这个图像，因为这个图像呢反应的是原函数斜率变化的一个图像，为啥积分就是求原函数，且听我娓娓道来。</p><p><img src="https://s1.ax1x.com/2023/01/15/pSQa40I.png"></p><p>假设现在有一个函数，你要求他的积分，这个积分的本意呢是求的这个函数的面积，因为他不像长方形正方行，底乘高就能得出来面积，他是一个曲面，你得把他分成足够小的一块块面积，然后进行累加，才能得到一个比较精确的结果，这个过程就叫积分，但是如果你真要这么算，这么多小的面积加起来，那你可能很难算出来。</p><p>我们假设上面的函数为$F’(x)$，那么他所围成的面积就是$F’(x)dx$，因为本图为最上面那张图的导函数图像，所以在同一位置，它的导数也就是$\frac{dy}{dx} &#x3D; F’(x)$，而刚才所说要求的积分（也就是面积）$\int F’(x)dx$就等于$\frac{dy}{dx}dx &#x3D; dy$（微分），结果就是上方函数（也就是原函数）在dx的范围内的y的增量。所以知道为啥两者是互逆的过程了吧。</p><p>最后总结一句话，就是你想求的函数的积分（面积），就是要求出其对应原函数的y的增量。</p>]]></content>
     
