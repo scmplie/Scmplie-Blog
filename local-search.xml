@@ -14,9 +14,30 @@
     
     <tags>
       
-      <tag>物理</tag>
+      <tag>电子</tag>
       
       <tag>模电</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>触发器的逻辑</title>
+    <link href="/study/trigger/"/>
+    <url>/study/trigger/</url>
+    
+    <content type="html"><![CDATA[<h1 id="基本RS触发器"><a href="#基本RS触发器" class="headerlink" title="基本RS触发器"></a>基本RS触发器</h1><h1 id="同步RS触发器"><a href="#同步RS触发器" class="headerlink" title="同步RS触发器"></a>同步RS触发器</h1><h1 id="主从RS触发器"><a href="#主从RS触发器" class="headerlink" title="主从RS触发器"></a>主从RS触发器</h1><blockquote><p>应该是有主从两个字的触发器，都是有一次翻转功能的（像主从RS触发器不能翻转的，其实更贴切的说应该是一次变化保持功能）。对于与非门构成的主从JK触发器就是下降沿触发的，因为当cp&#x3D;1时，cp’&#x3D;0，主触发器可以接收信号并输出，但无论怎么输出对于从触发器是没有影响的，只有当cp从1变为0时，也就是下降沿，此时cp&#x3D;0，cp’&#x3D;1，因为cp&#x3D;0，所以此时输入信号对于主触发器是没用的，但主触发器会保存下降沿瞬间前J和K的输出信号，因为cp’&#x3D;1，所以从触发器可以接收来自主触发器的输出信号，所以Q会变化，因为此时主触发器无论输入什么输出信号都是不变的，所以Q变化后保持，直到cp&#x3D;1，cp’&#x3D;0，此时主触发器继续开始变化，从触发器不变，Q也就不变，直到cp&#x3D;0，cp’&#x3D;1，也就是下一个下降沿的时候，Q会变化然后保持，直到下一个下降沿，循环往复。</p></blockquote><h1 id="JK触发器"><a href="#JK触发器" class="headerlink" title="JK触发器"></a>JK触发器</h1><h1 id="主从JK触发器"><a href="#主从JK触发器" class="headerlink" title="主从JK触发器"></a>主从JK触发器</h1><h1 id="D触发器"><a href="#D触发器" class="headerlink" title="D触发器"></a>D触发器</h1><h1 id="T触发器"><a href="#T触发器" class="headerlink" title="T触发器"></a>T触发器</h1>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>电子</tag>
+      
+      <tag>数电</tag>
       
     </tags>
     

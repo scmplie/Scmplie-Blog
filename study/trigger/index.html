@@ -16,19 +16,19 @@
   <meta name="author" content="Scmplie">
   <meta name="keywords" content="">
   
-    <meta name="description" content="模电也tm这么难，老子真的受不了了，就不能来点简单的学科吗">
+    <meta name="description" content="这些电路是怎么想出来的，太妙了">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我对于晶体管的理解">
-<meta property="og:url" content="https://www.scmplie.xyz/study/transistor/index.html">
+<meta property="og:title" content="触发器的逻辑">
+<meta property="og:url" content="https://www.scmplie.xyz/study/trigger/index.html">
 <meta property="og:site_name" content="Scmplie&#39;s little place">
-<meta property="og:description" content="模电也tm这么难，老子真的受不了了，就不能来点简单的学科吗">
+<meta property="og:description" content="这些电路是怎么想出来的，太妙了">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.scmplie.xyz/img/study/diode.png">
 <meta property="article:published_time" content="2023-01-26T15:49:03.000Z">
-<meta property="article:modified_time" content="2023-02-08T16:17:30.486Z">
+<meta property="article:modified_time" content="2023-02-08T17:35:15.291Z">
 <meta property="article:author" content="Scmplie">
 <meta property="article:tag" content="电子">
-<meta property="article:tag" content="模电">
+<meta property="article:tag" content="数电">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.scmplie.xyz/img/study/diode.png">
   
@@ -36,7 +36,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>我对于晶体管的理解 - Scmplie&#39;s little place</title>
+  <title>触发器的逻辑 - Scmplie&#39;s little place</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -278,7 +278,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="我对于晶体管的理解"></span>
+            <span id="subtitle" data-typed-text="触发器的逻辑"></span>
           
         </div>
 
@@ -301,7 +301,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1k 字
+          462 字
         
       </span>
     
@@ -312,7 +312,7 @@
         
         
         
-          9 分钟
+          4 分钟
         
       </span>
     
@@ -371,26 +371,15 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">我对于晶体管的理解</h1>
+            <h1 style="display: none">触发器的逻辑</h1>
             
             
               <div class="markdown-body">
                 
-                <p>　<font color=purple><strong>晶体管</strong></font> 泛指一切以半导体材料为基础的单一元件，包括各种半导体材料制成的<font color=skyblue><em>二极管</em></font>、<font color=skyblue><em>三极管</em></font>、场效应管、晶闸管等。晶体管具有检波、整流、放大、开关、稳压、信号调制等多种功能，晶体管可用于各种各样的数字和模拟功能。<p align="right">——百度百科</p></p>
-<ul>
-<li>以下都是个人理解，如果有误请友善指出</li>
-</ul>
-<h1 id="二极管的两种理解方式"><a href="#二极管的两种理解方式" class="headerlink" title="二极管的两种理解方式"></a>二极管的两种理解方式</h1><p class="note note-primary">　我们知道二极管具有 <b>单向导电性能</b> ，即给二极管阳极加上正向电压时，二极管导通。当给阳极和阴极加上反向电压时，二极管截止。怎么去理解呢？</p>
-<br>
-
-<p><img src="https://s1.ax1x.com/2023/01/27/pSNbX4S.png" srcset="/img/fluid/loading.gif" lazyload></p>
-<p>　我们可以看到上图是由一个 <strong>P型半导体</strong> 和一个 <strong>N型半导体</strong> 构成的二极管，由于N型半导体的电子比较多，而P型半导体的空穴比较多，这就形成了一个浓度差，导致了电子的扩散运动，即N区的电子向P区扩散。先到的电子先行抢占空穴，很快就把交界处附近的所有空穴都占领了。这时候，<u>由于P区得到了一些电子，所以P区呈现带负电的性质，而N区失去了一些电子，所以N区呈现带正电的性质</u><sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="虽然N型半导体中带有大量的自由电子，但这不代表它是带负电的，它整体呈中性。">[1]</span></a></sup>。因为同性相斥，后面来的电子想进入P区就会被这股力量给拦住，先行抢占到空穴的电子也就形成了一堵墙也就是<font color=blue>空间电荷区</font>（耗尽层），或者说PN结。</p>
-<h2 id="第一种（宏观）"><a href="#第一种（宏观）" class="headerlink" title="第一种（宏观）"></a>第一种（宏观）</h2><p>　上面说到因为电子的扩散运动导致P区带负电，N区带正电，也就产生了 <strong>由N指向P的内电场</strong> ，形成了PN结。我们知道内电场阻碍了电子的移动，所以我们只需要 <u>在二极管的两端加一个与内电场方向相反的一个外电场</u>（P极接电源正极，N极接电源负极），来抵消掉内电场。失去了内电场，自然对于电子的阻碍作用也就不存在了，所以二极管就<font color=red>导通</font>了。</p>
-<p>　当我们给内电场加一个电场方向相同的外电场时（P极接电源负极，N极接电源正极），这会使内电场被增强，而内电场增强对电子的阻碍作用也会增强，所以，二极管<font color=red>截止</font>。</p>
-<h2 id="第二种（微观）"><a href="#第二种（微观）" class="headerlink" title="第二种（微观）"></a>第二种（微观）</h2><p>　当二极管 <strong>正向偏置</strong> 时，也就是加了一个相反的外电场时，由于电源正极的吸引，异性相吸嘛，在P区形成PN结的电子陆续跑向正极，而电源的负极也推着挤在N区的电子往P区跑。当电压足够大，超过死区电压<sup id="fnref:2" class="footnote-ref"><a href="#fn:2" rel="footnote"><span class="hint--top hint--rounded" aria-label="死区电压，指的是即使加正向电压，也必须达到一定大小才开始导通，这个阈值叫死区电压。">[2]</span></a></sup>时，电源的力气也就足够吸引和推动电子打破PN结的阻拦，形成电流了，此时，二极管也就<font color=red>导通</font>了。</p>
-<p>　当二极管 <strong>反向偏置</strong> 时，也就是加了一个同向的外电场时，N区的电子由于电源的吸引，不断地经过电源跑向P区，导致N区失去大量电子，而P区得到大量电子，内电场得到增强，空间电荷区进一步增大，所以，电流更加流不过去了，二极管也就<font color=red>截止</font>了。</p>
-<h1 id="三极管是怎么放大电流的？"><a href="#三极管是怎么放大电流的？" class="headerlink" title="三极管是怎么放大电流的？"></a>三极管是怎么放大电流的？</h1><p><br><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>虽然N型半导体中带有大量的自由电子，但这不代表它是带负电的，它整体呈中性。<br><a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span>死区电压，指的是即使加正向电压，也必须达到一定大小才开始导通，这个阈值叫死区电压。<br><a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section></p>
-
+                <h1 id="基本RS触发器"><a href="#基本RS触发器" class="headerlink" title="基本RS触发器"></a>基本RS触发器</h1><h1 id="同步RS触发器"><a href="#同步RS触发器" class="headerlink" title="同步RS触发器"></a>同步RS触发器</h1><h1 id="主从RS触发器"><a href="#主从RS触发器" class="headerlink" title="主从RS触发器"></a>主从RS触发器</h1><blockquote>
+<p>应该是有主从两个字的触发器，都是有一次翻转功能的（像主从RS触发器不能翻转的，其实更贴切的说应该是一次变化保持功能）。对于与非门构成的主从JK触发器就是下降沿触发的，因为当cp&#x3D;1时，cp’&#x3D;0，主触发器可以接收信号并输出，但无论怎么输出对于从触发器是没有影响的，只有当cp从1变为0时，也就是下降沿，此时cp&#x3D;0，cp’&#x3D;1，因为cp&#x3D;0，所以此时输入信号对于主触发器是没用的，但主触发器会保存下降沿瞬间前J和K的输出信号，因为cp’&#x3D;1，所以从触发器可以接收来自主触发器的输出信号，所以Q会变化，因为此时主触发器无论输入什么输出信号都是不变的，所以Q变化后保持，直到cp&#x3D;1，cp’&#x3D;0，此时主触发器继续开始变化，从触发器不变，Q也就不变，直到cp&#x3D;0，cp’&#x3D;1，也就是下一个下降沿的时候，Q会变化然后保持，直到下一个下降沿，循环往复。</p>
+</blockquote>
+<h1 id="JK触发器"><a href="#JK触发器" class="headerlink" title="JK触发器"></a>JK触发器</h1><h1 id="主从JK触发器"><a href="#主从JK触发器" class="headerlink" title="主从JK触发器"></a>主从JK触发器</h1><h1 id="D触发器"><a href="#D触发器" class="headerlink" title="D触发器"></a>D触发器</h1><h1 id="T触发器"><a href="#T触发器" class="headerlink" title="T触发器"></a>T触发器</h1>
                 
               </div>
             
@@ -404,7 +393,7 @@
       
         <a href="/tags/%E7%94%B5%E5%AD%90/">#电子</a>
       
-        <a href="/tags/%E6%A8%A1%E7%94%B5/">#模电</a>
+        <a href="/tags/%E6%95%B0%E7%94%B5/">#数电</a>
       
     </div>
   
@@ -416,8 +405,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>我对于晶体管的理解</div>
-      <div>https://www.scmplie.xyz/study/transistor/</div>
+      <div>触发器的逻辑</div>
+      <div>https://www.scmplie.xyz/study/trigger/</div>
     </div>
     <div class="license-meta">
       
@@ -473,12 +462,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/study/transistor/" title="我对于晶体管的理解">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">我对于晶体管的理解</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/study/trigger/" title="触发器的逻辑">
-                        <span class="hidden-mobile">触发器的逻辑</span>
+                      <a href="/study/calculus/" title="他妈的微积分怎么那么难">
+                        <span class="hidden-mobile">他妈的微积分怎么那么难</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
