@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.scmplie.xyz/img/course/mcserver-setup/i_minecraft.jpg">
 <meta property="article:published_time" content="2023-01-11T04:45:23.000Z">
-<meta property="article:modified_time" content="2023-04-02T05:13:33.334Z">
+<meta property="article:modified_time" content="2023-05-08T16:45:15.632Z">
 <meta property="article:author" content="Scmplie">
 <meta property="article:tag" content="我的世界">
 <meta property="article:tag" content="MC服务器">
@@ -314,7 +314,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          1.6k 字
         
       </span>
     
@@ -325,7 +325,7 @@
         
         
         
-          13 分钟
+          14 分钟
         
       </span>
     
@@ -409,11 +409,21 @@
 <p>选这个基本没什么讲究，有一个说一下就是服务器的地址（像上海，广州，北京…），买的离你住的地址越近应该是越好的,其实就算远也没啥太大影响。系统这里推荐选择 <strong>centos 7.6</strong>，因为相较于其他Linux系统这个系统更加的轻量，对内存的占用更加少，所以在我们开服的过程中能分配更多的内存给到游戏，让游戏更加稳定。</p>
 </blockquote>
 <h2 id="1-2-服务器配置"><a href="#1-2-服务器配置" class="headerlink" title="1.2 服务器配置"></a>1.2 服务器配置</h2><p>拿到服务器之后，我们先进入控制台进行 <font color = #3B88DF><u><strong>重置密码</strong></u></font> ，因为接下来我们要使用 <font color = red>SSH工具</font> 进行远程连接，更加方便安全地进行配置和传输文件。</p>
-<h4 id="1-2-1-SSH工具的安装与配置"><a href="#1-2-1-SSH工具的安装与配置" class="headerlink" title="1.2.1 SSH工具的安装与配置"></a>1.2.1 SSH工具的安装与配置</h4><p>这边博主只推荐我用过的两款SSH工具，Xshell和FinalShell，都是十分好用的工具。</p>
+<h3 id="1-2-1-SSH工具的选择与安装"><a href="#1-2-1-SSH工具的选择与安装" class="headerlink" title="1.2.1 SSH工具的选择与安装"></a>1.2.1 SSH工具的选择与安装</h3><p>如果有自己在用的ssh工具或使用网页端ssh工具就不必展开查看此步骤了。</p>
+<details>
+<summary>要不，点开康康~</summary>
+
+<p>这边博主只推荐我用过的两款SSH工具，Xshell和FinalShell，都是十分好用的工具。</p>
 <p>Xshell虽然是付费软件，但其面向家庭和学生是有免费版的，只需填写一下姓名及邮件，勾选一下需要的软件，你就会收到软件的下载地址。为了更加方便地传输文件，通常需要搭配Xftp使用，所以在勾选时一般勾选两者。申请链接贴在这里 <a target="_blank" rel="noopener" href="https://www.xshell.com/zh/free-for-home-school/">https://www.xshell.com/zh/free-for-home-school</a></p>
 <p><img src="https://s1.ax1x.com/2023/04/02/ppfKCIf.png" srcset="/img/fluid/loading.gif" lazyload></p>
 <p><br>FinalShell是一款国产免费的软件，其中有些功能很方便，就不具体说明了。但因为其不开源的原因，而且网上有传闻说有时使用它时CPU会被大量占用，疑似被用来挖矿，导致很多用户出于安全考虑而不敢使用。博主在使用时确实发现FinalShell在使用过程中要比Xshell卡顿一些。如果你没有安全顾虑，那么这应该也是一款不错的工具。下载链接贴在这里<a target="_blank" rel="noopener" href="http://www.hostbuf.com/downloads/finalshell_install.exe">http://www.hostbuf.com/downloads/finalshell_install.exe</a></p>
 <p><img src="https://s1.ax1x.com/2023/04/02/ppfQADs.jpg" srcset="/img/fluid/loading.gif" lazyload></p>
+<p>下载完成之后，一路同意安装即可。</p>
+</details>
+
+<h3 id="1-2-2-远程连接与配置"><a href="#1-2-2-远程连接与配置" class="headerlink" title="1.2.2 远程连接与配置"></a>1.2.2 远程连接与配置</h3><p>接下来以 Xshell 作为示例进行后面的操作。</p>
+<p>打开软件之后，我们先点击图片中左上角的新建会话（图中红框）<br><img src="https://s1.ax1x.com/2023/05/09/p90aAxK.md.png" srcset="/img/fluid/loading.gif" lazyload></p>
+<p>然后在这个界面中给你要远程连接的主机命名，以及将远程主机的公网ip填入（图中红框）。其他不用动，点击确定即可。<br><img src="https://s1.ax1x.com/2023/05/09/p90ak26.md.png" srcset="/img/fluid/loading.gif" lazyload></p>
 <p><br>还在更新中——</p>
 
                 
