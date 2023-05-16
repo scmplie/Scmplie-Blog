@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>一场充满了危机与美好的冒险之旅，整合包《启程：远方》</title>
+    <link href="/game/Departure-Far-away/"/>
+    <url>/game/Departure-Far-away/</url>
+    
+    <content type="html"><![CDATA[<h1 id="模组列表"><a href="#模组列表" class="headerlink" title="模组列表"></a>模组列表</h1><h2 id="前置模组"><a href="#前置模组" class="headerlink" title="前置模组"></a>前置模组</h2><details><ul><li>fabric-api</li><li>[法术引擎] spell_engine</li><li>[符文] runes</li><li>[物品过滤器] item-filters</li><li>[建筑学] architectury</li><li>[更好的前置] bclib</li><li>[书架] Bookshelf</li><li>[基本组成] cardinal-components</li><li>[布料] cloth-config</li><li>[柯基库] CorgiLib</li><li>[创造核心] CreativeCore</li><li>[数据属性] dataattributes</li><li>[kotlin语言支持] fabric-language-kotlin</li><li>[ftb库] ftb-library</li><li>[壁虎库] geckolib</li><li>[搜索库] libraryferret</li><li>[owo库] owo-lib</li><li>[玩家动作库] player-animation-lib</li><li>[咒语力量] spell_power</li><li>[地形混合] TerraBlender</li><li>[合金伪造] wraith-alloy-forgery</li><li>[然而又一个配置库] YetAnotherConfigLib</li><li>[YUNG的接口] YungsApi</li></ul></details><h2 id="优化模组"><a href="#优化模组" class="headerlink" title="优化模组"></a><font color=green>优化模组</font></h2><details><ul><li>[DFU载入优化] lazydfu</li><li>[疾速加载] dashloader</li><li>[锂] lithium</li><li>[流畅加载] smoothboot</li><li>[模组菜单] modmenu</li><li>[钠] sodium</li><li>[钠·扩展] sodium-extra</li><li>[Reese的钠视频界面] reeses_sodium_options</li><li>[属性修复] AttributeFix</li><li>[星光] starlight</li><li>[快速加载] Fastload</li><li>[超快] ImmediatelyFast</li></ul></details><h2 id="拓展模组"><a href="#拓展模组" class="headerlink" title="拓展模组"></a><font color=lightgreen>拓展模组</font></h2><details><ul><li>[FTB 团队] ftb-teams</li><li>[FTB 任务] ftb-quests</li><li>[Lambda的动态光源] lambdynamiclights</li><li>[背用武器] backslot</li><li>[背用武器拓展] backslotaddon</li><li>[表情工艺] emotecraft</li><li>[动态声音滤波器] DynamicSoundFilters</li><li>[附魔描述] EnchantmentDescriptions</li><li>[脚步声] PresenceFootsteps</li><li>[进食动画] eating-animation</li><li>[苹果皮] appleskin</li><li>[鼠标手势] MouseTweaks</li><li>[物品物理掉落] ItemPhysic</li><li>[自然音效] AmbientSounds</li><li>[聊天头像] chat_heads</li><li>[细节盔甲] DetailArmorBar</li><li>[更好的战斗] bettercombat</li><li>[光影] iris</li><li>[季节显示] seasonhud</li><li>[饱食度扩展] sustenance</li><li>[工具状态] ToolStats</li><li>[伤害显示] torohealth</li></ul></details><h2 id="工具模组"><a href="#工具模组" class="headerlink" title="工具模组"></a>工具模组</h2><details><ul><li>[JEI物品管理器] jei</li><li>[Xaero的小地图] Xaeros_Minimap</li><li>[Xaero的世界地图] XaerosWorldMap</li><li>[一键整理] Inventory Sorting</li><li>[缩放] Zoomify</li></ul></details><h2 id="玩法模组"><a href="#玩法模组" class="headerlink" title="玩法模组"></a><font color=red>玩法模组</font></h2><details><ul><li>[Fabric版传送石碑] wraith-waystones</li><li>[更凶猛的末影龙] dragonfight</li><li>[农夫乐事] farmers-delight</li><li>[扩充乐事] expandeddelight</li><li>[农夫暇事] Farmersrespite</li><li>[连锁采集] veinmining</li><li>[龙战利品] dragonloot</li><li>[旅行者背包] travelers-backpack</li><li>[魔法师] wizards</li><li>[末地：创世] fabric-end-remastered</li><li>[奇异饰品] artifacts</li><li>[神话金属] mythicmetals</li><li>[天境：重生] paradise-lost</li><li>[脱水] dehydration</li><li>[月亮事件] Enhanced_Celestials</li><li>[战斗翻滚] combatroll</li><li>[其他家具] another_furniture</li><li>[大型毁灭性boss] BOMD</li><li>[精英怪物] eldritch</li><li>[季节] fabric-seasons</li><li><font color=red>[成长之书] playerex（核心玩法）</font></li><li>[遗物] relicex</li><li>[提升之戒] RingsOfAscension</li><li>[背包拓展] scout</li><li>[简易刀剑] simplyswords</li><li>[饰品栏] trinkets</li><li>[经验存储] xp_storage</li></ul></details><h2 id="生态模组"><a href="#生态模组" class="headerlink" title="生态模组"></a>生态模组</h2><details><ul><li>[YUNG的地牢优化] YungsBetterDungeons</li><li>[YUNG的海底神殿优化] YungsBetterOceanMonuments</li><li>[YUNG的矿井优化] YungsBetterMineshafts</li><li>[YUNG的沙漠神殿优化] YungsBetterDesertTemples</li><li>[YUNG的要塞重制] YungsBetterStrongholds</li><li>[YUNG的沼泽小屋优化] YungsBetterWitchHuts</li><li>[YUNG的下界堡垒优化] YungsBetterNetherFortresses</li><li>[YUNG的锦上添花] YungsExtras</li><li>[地牢浮现之时] DungeonsArise</li><li>[丰富的生态] ecologics</li><li>[腐烂生物] rottencreatures</li><li>[更多村民] morevillagers</li><li>[更好的末地] better-end</li><li>[更好的下界] better-nether</li><li>[你将去的生物群系] Oh_The_Biomes_You’ll_Go</li><li>[自然主义] naturalist</li><li>[更好的村庄] bettervillage</li><li>[探索] explorify</li><li>[穆格的探险家结构] mvs</li><li>[结构] Structory</li><li>[地形] Terralith</li><li>[凌乱结构] unstructured</li></ul></details>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>我的世界</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>这么多的触发器，你了解几种呢</title>
     <link href="/study/trigger/"/>
     <url>/study/trigger/</url>
